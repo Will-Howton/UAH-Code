@@ -20,9 +20,11 @@ int main() {
     string finalNum = "";
 
     while (num > 0) {
-        finalNum = finalNum + to_string(num % base);
+        finalNum += num % base;
         num /= base;
     }
 
     cout << "Your number in base " << base << " is " << finalNum << endl;
+
+    return 0;
 }
